@@ -48,3 +48,6 @@ sudo pacman -Syu boost swig sox
 ## Usage
 
 See ```example/decode.py``` for usage.
+
+![Beam Search LM Batch](./images/ctc_beam_search_decoder_batch.png)
+![Beam Search LM](./images/ctc_beam_search_decoder.png)
