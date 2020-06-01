@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo apt-get install -y libboost-all-dev swig sox
+
 if [ ! -d kenlm ]; then
     wget https://kheafield.com/code/kenlm.tar.gz
     tar -xzvf kenlm.tar.gz
