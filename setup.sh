@@ -1,6 +1,13 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-sudo apt install -y libboost-all-dev swig sox
+if [[ "$OSTYPE" =~ ^linux ]]; then
+    sudo apt install -y libboost-all-dev swig sox
+fi
+
+if [[ "$OSTYPE" =~ ^darwin ]]; then
+    brew install boost swig sox
+fi
+
 
 if [ ! -d kenlm ]; then
     wget https://kheafield.com/code/kenlm.tar.gz
