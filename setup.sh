@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [[ "$OSTYPE" =~ ^linux ]]; then
     sudo apt install -y libboost-all-dev swig sox
